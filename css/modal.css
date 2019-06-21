@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  text-align: center;
+  width: 350px;
+  margin: 10% auto;
+  border-radius: 10px;
+  padding: 3rem;
+  animation-name: modal-open;
+  animation-duration: 1s;
+}
+
+.modal-content h1 {
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
